@@ -6,13 +6,11 @@
 /*   By: isneves- <isneves-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 15:33:50 by isneves-          #+#    #+#             */
-/*   Updated: 2024/05/14 22:48:52 by isneves-         ###   ########.fr       */
+/*   Updated: 2024/05/14 22:54:26 by isneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// amo o igor
 
 static unsigned int ft_number_size(int number)
 {
