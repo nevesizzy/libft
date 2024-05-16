@@ -6,7 +6,7 @@
 /*   By: isneves- <isneves-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 22:41:22 by isneves-          #+#    #+#             */
-/*   Updated: 2024/05/10 15:39:49 by isneves-         ###   ########.fr       */
+/*   Updated: 2024/05/16 22:15:11 by isneves-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <stdio.h>
 
-//LIBC FUNCTIONS//
+//primeiras
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -43,7 +43,7 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *src);
 
-//NONLIBC FUNCTIONS//
+//adicionais
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
@@ -56,12 +56,12 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
-//BONUS
+//bonus
 typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
-}	t_list;
+}				t_list;
 
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
