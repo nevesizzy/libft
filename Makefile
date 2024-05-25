@@ -11,16 +11,16 @@ BONUS_SRCS = ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c ft_
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
-$(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
-
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
 
-bonus: $(OBJS) $(BONUS_OBJS)
-	ar rc $(NAME) $(BONUS_OBJS)
+$(NAME): $(OBJS)
+	ar rcs $(NAME) $(OBJS)
+
+bonus: $(NAME) $(BONUS_OBJS)
+	ar rcs $(NAME) $(BONUS_OBJS)
 
 clean:
 	rm -rf $(OBJS) $(BONUS_OBJS)
@@ -29,3 +29,5 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re bonus
